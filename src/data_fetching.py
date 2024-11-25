@@ -13,6 +13,6 @@ def save_data(data: pd.DataFrame, filename: str):
     data.to_csv(f"data/{filename}.csv")
 
 if __name__ == "__main__":
-    ticker = 'AAPL'  # Target stock
+    ticker = 'EURUSD=X'  # Example forex pair (EUR/USD)
     data = fetch_data(ticker)
     save_data(data, f"{ticker}_data")
